@@ -9,6 +9,11 @@ p{
   margin: 0;
 }
 
+section{
+  display: flex;
+  gap: 20px;
+}
+
 @import 'colors';
 @import 'fonts';
 @import 'components';
@@ -16,3 +21,4 @@ p{
 @import 'section';
 @import 'footer';
 @import 'button-pink';
+@import 'card';
