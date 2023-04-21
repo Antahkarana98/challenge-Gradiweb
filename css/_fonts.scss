@@ -1,4 +1,19 @@
-.title-abhaya{
-  font-family: 'Abhaya Libre', serif;
-  font-weight: 700;
+@font-face {
+  font-family: 'filson-pro';
+  src: url(.//filson-pro/FilsonProRegular.otf);
+}
+
+@font-face {
+  font-family: 'neogrotesk';
+  src: url(./Neogrotesk/Fontspring-DEMO-neogroteskess-regular.otf);
+}
+
+@font-face {
+  font-family: 'filson-pro-book';
+  src: url(./filson-pro/FilsonProBook.otf);
+}
+
+@font-face {
+  font-family: 'filson-pro-medium';
+  src: url(./filson-pro/FilsonProMedium.otf);
 }
