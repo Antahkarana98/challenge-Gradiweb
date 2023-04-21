@@ -5,19 +5,22 @@
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
+  font-family: 'Abhaya Libre', serif;
+  font-weight: 700;
 }
 
 h1{
   margin: 0;
   font-size: 44px;
-  text-transform: capitalize;
+  // text-transform: capitalize;
+  font-family: 'Abhaya Libre', serif;
   line-height: 140%;
 }
 
 header{
   display: flex;
   justify-content: space-around;
-  
+
   .relative{
     position: relative;
   }
