@@ -74,7 +74,6 @@ main section {
 }
 
 footer {
-  position: relative;
   margin-top: 250px;
 }
 
@@ -106,7 +105,6 @@ footer form input {
   border: 0;
   outline: 0;
   padding: 12px 28px;
-  width: 30%;
   background-color: #FFF;
   font-family: "filson-pro-medium", serif;
 }
@@ -130,7 +128,7 @@ footer form button:hover {
 
 .bg-wave {
   width: 100%;
-  height: 110%;
+  height: 500px;
   background: #D1F1FF;
   position: absolute;
   bottom: 0;
@@ -141,7 +139,7 @@ footer form button:hover {
   width: 100%;
   height: 100%;
   position: absolute;
-  bottom: 100%;
+  bottom: 500px;
   left: 0;
   vertical-align: top;
   background: url(../images/wave.svg);
