@@ -1,0 +1,76 @@
+.card{
+  .card-img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    .card-img{
+      object-fit: cover;
+    }
+
+    .button-card{
+      background-color: #FFF;
+      position: absolute;
+      z-index: 20;
+      justify-content: center;
+      margin: 20px 20px;
+      padding: 10px 0;
+      border-radius: 20px;
+      text-decoration: none;
+      color: #FFDCD3;
+      font-family: 'neogrotesk', sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      width: 90%;
+      transition: all 0.2s ease-in-out;
+      &:hover{
+        background-color: #F5F5F5;
+        color: #000;
+      }
+    }
+  }
+}
+
+.card-body{
+  margin-top: 18px;
+  .card-title{
+    font-family: 'filson-pro-medium', sans-serif;
+    font-size: 18px;
+    color: #444950;
+  }
+  .card-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    span{
+      font-family: 'filson-pro-book', sans-serif;
+      font-size: 14px;
+      color: #939393;
+      margin-left: 5px;
+    }
+
+    .rating{
+      display: flex;
+      color: #FFC658;
+      ;
+
+    }
+
+    .price{
+      font-family: 'filson-pro-medium', sans-serif;
+      font-size: 15px;
+      color: #444950;
+      margin-top: 10px;
+      display: flex;
+
+      .sales{
+        font-family: 'filson-pro-book', sans-serif;
+        font-size: 15px;
+        color: #939393;
+        text-decoration: line-through;
+        margin-right: 10px;
+      }
+    }
+  }
+}

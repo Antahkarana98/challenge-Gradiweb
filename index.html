@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/styles.css">
   <title>Document</title>
 </head>
@@ -27,15 +28,30 @@
     <section>
       <div class="card">
         <div class="card-img">
-          <img src="https://cdn.shopify.com/s/files/1/0730/1113/4774/products/image22_2_d537f9ae-50f5-4ee2-bc69-e2639599de21.png?v=1676927613" alt="">
+          <img
+          src="https://cdn.shopify.com/s/files/1/0730/1113/4774/products/image22_2_d537f9ae-50f5-4ee2-bc69-e2639599de21.png?v=1676927613"
+          alt=""
+          class="img-card"
+          >
           <a href="#" class="button-card">Add to cart</a>
         </div>
 
         <div class="card-body">
-          <p>The Complete Snowboard <span>x50</span></p>
-          <div>
-            <p>⭐⭐⭐⭐⭐ <span>(320)</span></p>
-            <p>€ 499,00</p>
+          <p class="card-title">The Complete Snowboard <span>x50</span></p>
+          <div class="card-info">
+            <p class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(320)</span>
+            </p>
+
+            <div class="price">
+              <p class="sales">€499,00</p>
+              <p>€399,00</p>
+            </div>
           </div>
         </div>
       </div>
@@ -46,8 +62,8 @@
   </main>
 
   <footer>
-    <div class="bg-wave"></div>
-    <div class="wave"></div>
+    <!-- <div class="bg-wave"></div>
+    <div class="wave"></div> -->
 
     <h2 class="color-title-gray">Join the green revolution without <br>
        commitment</h2>
