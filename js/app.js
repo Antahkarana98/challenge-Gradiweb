@@ -13,11 +13,11 @@ import { apiQuery } from './api.js';
       const { title } = product;
 
       const div = document.createElement('div');
-      
-      productsList.innerHTML += `
-        <p>${title}</p>
 
-      `;
+      // productsList.innerHTML += `
+      //   <p>${title}</p>
+
+      // `;
     });
   }
 })();
