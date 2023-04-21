@@ -16,12 +16,13 @@ h1{
 
 header{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  
+  .relative{
+    position: relative;
+  }
 }
 
-header .relative{
-  position: relative;
-}
 
 .box-blue{
   background-color: #CAF0FF;
