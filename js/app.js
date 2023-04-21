@@ -1,4 +1,6 @@
 import { apiQuery } from './api.js';
+// import { showProducts } from './showProducts.js';
+// import { ratingCalc } from './functions.js';
 
 (function () {
 
