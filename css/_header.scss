@@ -1,27 +1,4 @@
-body {
-  background-color: #F5F5F5;
-  margin: 0;
-  padding: 0;
-}
-
-p {
-  margin: 0;
-}
-
-.color-salmon {
-  background-color: #FFDCD3;
-}
-
-.color-title-gray {
-  color: #444950;
-}
-
-.title-abhaya {
-  font-family: "Abhaya Libre", serif;
-  font-weight: 700;
-}
-
-.top-bar {
+.top-bar{
   height: 32px;
   font-size: 16px;
   display: flex;
@@ -30,23 +7,23 @@ p {
   text-transform: uppercase;
 }
 
-h1 {
+h1{
   margin: 0;
   font-size: 44px;
   text-transform: capitalize;
   line-height: 140%;
 }
 
-header {
+header{
   display: flex;
   justify-content: space-evenly;
 }
 
-header .relative {
+header .relative{
   position: relative;
 }
 
-.box-blue {
+.box-blue{
   background-color: #CAF0FF;
   width: 70px;
   height: 24px;
@@ -55,4 +32,4 @@ header .relative {
   left: -23px;
   z-index: -1;
   border-radius: 100px;
-}/*# sourceMappingURL=styles.css.map */
+}
