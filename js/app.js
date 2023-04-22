@@ -1,6 +1,7 @@
 import { apiQuery } from './api.js';
 // import { showProducts } from './showProducts.js';
-// import { ratingCalc } from './functions.js';
+import { showStars } from './ui.js';
+import { ratingCalc, formattTags, ratingStars } from './rating.js';
 
 (function () {
 
@@ -12,7 +13,13 @@ import { apiQuery } from './api.js';
     const products = await apiQuery();
 
     products.forEach(product => {
-      const { title, totalInventory, prices: {max: {amount: amountMax }, min: {amount: amountMin }}, featuredImage: { url:url } } = product;
+      const { title, totalInventory, prices: {max: {amount: amountMax }, min: {amount: amountMin }}, featuredImage: { url:url }, tags } = product;
+
+      const numbers = formattTags(tags);
+      const rating = ratingCalc(numbers);
+      const stars = ratingStars(rating);
+
+
 
       const div = document.createElement('div');
 
@@ -30,14 +37,7 @@ import { apiQuery } from './api.js';
           <div class="card-body">
             <p class="card-title">${title} <span>x${totalInventory}</span></p>
             <div class="card-info">
-              <p class="rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <span>(320)</span>
-              </p>
+              <p class="rating"></p>
 
               <div class="price">
                 <p class="sales">€${amountMax}</p>
@@ -49,6 +49,9 @@ import { apiQuery } from './api.js';
       `;
 
       productsList.appendChild(div);
+      showStars(stars, rating);
     });
   }
+
+
 })();
