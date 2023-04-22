@@ -24,23 +24,30 @@
     <div class="butons-carrousel">
       <div class="flex-carrousel">
         <div class="box-pink"></div>
-        <button class="button-carrousel"><i class="fa-sharp fa-solid fa-angle-left"></i></button>
+        <button id="left" class="button-carrousel"><i class="fa-sharp fa-solid fa-angle-left"></i></button>
       </div>
       <div class="flex-carrousel">
         <div class="box-pink"></div>
-        <button class="button-carrousel"><i class="fa-sharp fa-solid fa-angle-right"></i></button>
+        <button id="right" class="button-carrousel"><i class="fa-sharp fa-solid fa-angle-right"></i></button>
       </div>
     </div>
   </header>
 
   <main>
     <section>
-      <div id="list-products"></div>
+      <!-- <div id="list-products"></div> -->
+      <div class="wrapper">
+        <div class="carousel">
+          <div id="list-products"></div>
+        </div>
+      </div>
     </section>
     <div>
       <a href="#" class="button-pink">BROWSE ALL PRODUCTS</a>
     </div>
+
   </main>
+
 
   <footer>
     <!-- <div class="bg-wave"></div>
@@ -58,6 +65,6 @@
     </form>
   </footer>
 
-  <script src="./js/app.js" type="module"></script>
+  <script src="./js/app.js" type="module" defer></script>
 </body>
 </html>

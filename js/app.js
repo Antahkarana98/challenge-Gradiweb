@@ -1,17 +1,20 @@
 import { apiQuery } from './api.js';
-// import { showProducts } from './showProducts.js';
+
 import { showStars } from './ui.js';
 import { ratingCalc, formattTags } from './functions.js';
+import { carousel } from './carousel.js';
 
 (function () {
 
   document.addEventListener('DOMContentLoaded', showProducts);
 
+  let carrusel = false;
+
   async function showProducts(){
     const products = await apiQuery();
 
     const productsList = document.querySelector('#list-products');
-    
+
     products.forEach(product => {
       const { title, totalInventory, prices: {max: {amount: amountMax }, min: {amount: amountMin }}, featuredImage: { url:url }, tags } = product;
 
@@ -25,8 +28,9 @@ import { ratingCalc, formattTags } from './functions.js';
           <div class="card-img">
             <img
             src="${url}"
-            alt=""
+            alt="product omage"
             class="img-card"
+            draggable="false"
             >
             <a href="#" class="button-card">Add to cart</a>
           </div>
@@ -57,9 +61,8 @@ import { ratingCalc, formattTags } from './functions.js';
       spanRating.textContent = `(${rating})`;
 
       ratingElement.appendChild(spanRating);
-
     });
+    carousel();
   }
-
 
 })();

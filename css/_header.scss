@@ -14,7 +14,7 @@
 header{
   display: flex;
   justify-content: space-around;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   h1{
     margin: 0;
     font-size: 44px;
@@ -53,6 +53,9 @@ header{
   color: #444950;
   border: none;
   cursor: pointer;
+  &:hover{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
 }
 
 .box-pink{
