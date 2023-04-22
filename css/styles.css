@@ -270,7 +270,12 @@ footer form button:hover {
 }
 .card-body .card-info .rating {
   display: flex;
-  color: #FFC658;
+}
+.card-body .card-info .star-yellow {
+  color: #FDC830;
+}
+.card-body .card-info .star-gray {
+  color: #939393;
 }
 .card-body .card-info .price {
   font-family: "filson-pro-medium", sans-serif;
