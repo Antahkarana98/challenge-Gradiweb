@@ -1,60 +1,61 @@
-export function showStars(stars, rating){
-  switch (stars) {
-    case 1:
-      document.querySelector('.rating').innerHTML = `
+export function showStars(rating){
+
+  const stars = document.createElement('div');
+
+  switch (true) {
+    case rating > 0 && rating <= 100:
+      stars.innerHTML = `
         <i class="fa-solid fa-star star-yellow"></i>
         <i class="fa-solid fa-star star-gray"></i>
         <i class="fa-solid fa-star star-gray"></i>
         <i class="fa-solid fa-star star-gray"></i>
         <i class="fa-solid fa-star star-gray"></i>
-        <span>(${rating})</span>
-      `
-      break;
-    case 2:
-      document.querySelector('.rating').innerHTML = `
-        <i class="fa-solid fa-star star-yellow"></i>
-        <i class="fa-solid fa-star star-yellow"></i>
-        <i class="fa-solid fa-star star-gray"></i>
-        <i class="fa-solid fa-star star-gray"></i>
-        <i class="fa-solid fa-star star-gray"></i>
-        <span>(${rating})</span>
       `
       break;
 
-      case 3:
-      document.querySelector('.rating').innerHTML = `
-        <i class="fa-solid fa-star star-yellow"></i>
+    case rating > 100 && rating <= 200:
+      stars.innerHTML = `
         <i class="fa-solid fa-star star-yellow"></i>
         <i class="fa-solid fa-star star-yellow"></i>
         <i class="fa-solid fa-star star-gray"></i>
         <i class="fa-solid fa-star star-gray"></i>
-        <span>(${rating})</span>
+        <i class="fa-solid fa-star star-gray"></i>
       `
       break;
 
-      case 4:
-      document.querySelector('.rating').innerHTML = `
+    case rating > 200 && rating <= 300:
+      stars.innerHTML = `
+        <i class="fa-solid fa-star star-yellow"></i>
+        <i class="fa-solid fa-star star-yellow"></i>
+        <i class="fa-solid fa-star star-yellow"></i>
+        <i class="fa-solid fa-star star-gray"></i>
+        <i class="fa-solid fa-star star-gray"></i>
+      `
+      break;
+
+    case rating > 300 && rating <= 400:
+      stars.innerHTML = `
         <i class="fa-solid fa-star star-yellow"></i>
         <i class="fa-solid fa-star star-yellow"></i>
         <i class="fa-solid fa-star star-yellow"></i>
         <i class="fa-solid fa-star star-yellow"></i>
         <i class="fa-solid fa-star star-gray"></i>
-        <span>(${rating})</span>
       `
       break;
 
-      case 5:
-      document.querySelector('.rating').innerHTML = `
+    case rating > 400 && rating <= 500:
+      stars.innerHTML = `
         <i class="fa-solid fa-star star-yellow"></i>
         <i class="fa-solid fa-star star-yellow"></i>
         <i class="fa-solid fa-star star-yellow"></i>
         <i class="fa-solid fa-star star-yellow"></i>
         <i class="fa-solid fa-star star-yellow"></i>
-        <span>(${rating})</span>
       `
       break;
 
     default:
       break;
-  }
+
+    }
+    return stars;
 }
