@@ -7,20 +7,20 @@
   text-transform: uppercase;
   font-family: 'Abhaya Libre', serif;
   font-weight: 700;
+  margin-bottom: 31px;
 }
 
-h1{
-  margin: 0;
-  font-size: 44px;
-  // text-transform: capitalize;
-  font-family: 'Abhaya Libre', serif;
-  line-height: 140%;
-}
 
 header{
   display: flex;
   justify-content: space-around;
-
+  margin-bottom: 50px;
+  h1{
+    margin: 0;
+    font-size: 44px;
+    font-family: 'Abhaya Libre', serif;
+    line-height: 140%;
+  }
   .relative{
     position: relative;
   }
@@ -36,4 +36,36 @@ header{
   left: -23px;
   z-index: -1;
   border-radius: 100px;
+}
+
+.flex-carrousel{
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.button-carrousel{
+  position: relative;
+  width: 39.5px;
+  height: 39.5px;
+  border-radius: 50%;
+  background-color: #FFF;
+  color: #444950;
+  border: none;
+  cursor: pointer;
+}
+
+.box-pink{
+  background-color: #FFDCD3;
+  width: 70px;
+  height: 24px;
+  position: absolute;
+  z-index: -1;
+  border-radius: 100px;
+  margin-bottom: 7px;
+}
+
+.butons-carrousel{
+  display: flex;
+  gap: 40px;
 }

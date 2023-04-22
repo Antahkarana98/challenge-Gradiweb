@@ -6,8 +6,9 @@ footer h2{
   text-align: center;
   font-family: 'Abhaya Libre', serif;
   font-size: 44px;
+  line-height: 61.6px;
   font-weight: 700;
-  margin: 25px 0;
+  margin-bottom: 35px;
 }
 
 footer p{
@@ -22,32 +23,40 @@ footer form{
   justify-content: center;
   align-items: center;
   gap: 3px;
-  padding: 25px 0;
+  padding-top: 30px;
+  padding-bottom: 73px;
 }
 
 footer form input{
   border-radius: 100px;
   border: 0;
   outline: 0;
-  padding: 12px 28px;
+  padding: 11px 24px;
+  width: 300px;
   background-color: #FFF;
   font-family: 'filson-pro-medium', serif;
+  line-height: 27px;
+  font-size: 15px;
+  border: 1px solid #EFA693;
   &:focus{
-    border: 1px solid #EFA693;
+    border: 1px solid #e88d76;
   }
 }
 
 footer form button{
   border-radius: 100px;
   border: 0;
-  padding: 12px 32px;
+  padding: 12px 40px;
   background-color: #EFA693;
+  opacity: .9;
   color: #FFF;
   font-family: 'neogrotesk', sans-serif;
-  font-weight: 700;
+  line-height: 23.8px;
   font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
   &:hover{
-    background-color: #FFDCD3;
+    background-color: #e88d76;
   }
 }
 
