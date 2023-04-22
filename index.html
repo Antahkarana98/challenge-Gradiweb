@@ -24,18 +24,23 @@
     <div class="butons-carrousel">
       <div class="flex-carrousel">
         <div class="box-pink"></div>
-        <button class="button-carrousel"><i class="fa-sharp fa-solid fa-angle-left"></i></button>
+        <button id="left" class="button-carrousel"><i class="fa-sharp fa-solid fa-angle-left"></i></button>
       </div>
       <div class="flex-carrousel">
         <div class="box-pink"></div>
-        <button class="button-carrousel"><i class="fa-sharp fa-solid fa-angle-right"></i></button>
+        <button id="right" class="button-carrousel"><i class="fa-sharp fa-solid fa-angle-right"></i></button>
       </div>
     </div>
   </header>
 
   <main>
     <section>
-      <div id="list-products"></div>
+      <!-- <div id="list-products"></div> -->
+      <div class="wrapper">
+        <div class="carousel">
+          <div id="list-products"></div>
+        </div>
+      </div>
     </section>
     <div>
       <a href="#" class="button-pink">BROWSE ALL PRODUCTS</a>
@@ -43,59 +48,6 @@
 
   </main>
 
-  <div class="wrapper">
-    <ul class="carousel">
-      <li class="card2">
-        <div class="img">
-          <img src="./images/img-1.jpg" alt="" draggable="false">
-        </div>
-        <h2>persona tu</h2>
-        <span>Manager</span>
-      </li>
-
-      <li class="card2">
-        <div class="img">
-          <img src="./images/img-2.jpg" alt="" draggable="false">
-        </div>
-        <h2>persona tu</h2>
-        <span>Manager</span>
-      </li>
-
-      <li class="card2">
-        <div class="img">
-          <img src="./images/img-3.jpg" alt="" draggable="false">
-        </div>
-        <h2>persona tu</h2>
-        <span>Manager</span>
-      </li>
-
-      <li class="card2">
-        <div class="img">
-          <img src="./images/img-4.jpg" alt="" draggable="false">
-        </div>
-        <h2>persona tu</h2>
-        <span>Manager</span>
-      </li>
-
-      <li class="card2">
-        <div class="img">
-          <img src="./images/img-5.jpg" alt="" draggable="false">
-        </div>
-        <h2>persona tu</h2>
-        <span>Manager</span>
-      </li>
-
-      <li class="card2">
-        <div class="img">
-          <img src="./images/img-6.jpg" alt="" draggable="false">
-        </div>
-        <h2>persona tu</h2>
-        <span>Manager</span>
-      </li>
-    </ul>
-    <i id="left" class="fa-sharp fa-solid fa-angle-left"></i>
-    <i id="right" class="fa-sharp fa-solid fa-angle-right"></i>
-  </div>
 
   <footer>
     <!-- <div class="bg-wave"></div>
