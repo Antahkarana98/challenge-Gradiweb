@@ -18,15 +18,16 @@
       padding: 10px 0;
       border-radius: 20px;
       text-decoration: none;
-      color: #FFDCD3;
+      color: #EFA693;
       font-family: 'neogrotesk', sans-serif;
       text-transform: uppercase;
       text-align: center;
       width: 90%;
-      transition: all 0.2s ease-in-out;
+      transition: all 0.3s ease-in-out;
       &:hover{
-        background-color: #F5F5F5;
-        color: #000;
+        background-color: #fcfcfc;
+        color: #e88d76;
+        border: 1px solid #e88d76;
       }
     }
   }
