@@ -1,7 +1,9 @@
 export function showStars(rating){
 
+  //Crea las estrellas de acuerdo al rating total
   const stars = document.createElement('div');
 
+  //Evaluan el rating para agregar las estrellas por medio de innerhtml
   switch (true) {
     case rating > 0 && rating <= 100:
       stars.innerHTML = `
