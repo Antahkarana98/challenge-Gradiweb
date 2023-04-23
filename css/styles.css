@@ -333,7 +333,7 @@ footer form button:hover {
 }
 @media (min-width: 400px) and (max-width: 900px) {
   footer {
-    margin-top: 200px;
+    margin-top: 150px;
   }
   .pill-pink img {
     width: 45px;
