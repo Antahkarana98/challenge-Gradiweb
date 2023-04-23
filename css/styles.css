@@ -175,7 +175,6 @@ footer {
   margin-top: 250px;
   position: relative;
 }
-
 footer h2 {
   text-align: center;
   font-family: "Abhaya Libre", serif;
@@ -184,14 +183,12 @@ footer h2 {
   font-weight: 700;
   margin-bottom: 35px;
 }
-
 footer p {
   text-align: center;
   font-size: 15px;
   color: #939393;
   font-family: "filson-pro-book", serif;
 }
-
 footer form {
   display: flex;
   justify-content: center;
@@ -200,7 +197,6 @@ footer form {
   padding-top: 30px;
   padding-bottom: 73px;
 }
-
 footer form input {
   border-radius: 100px;
   border: 0;
@@ -215,7 +211,6 @@ footer form input {
 footer form input:focus {
   border: 1px solid #e88d76;
 }
-
 footer form button {
   border-radius: 100px;
   border: 0;
@@ -256,6 +251,59 @@ footer form button:hover {
   z-index: -1;
 }
 
+.pill-pink {
+  position: absolute;
+  z-index: -1;
+  left: 20%;
+  top: -4%;
+}
+.pill-pink img {
+  width: 53px;
+  height: 50px;
+}
+
+.pill-green {
+  position: absolute;
+  z-index: -1;
+  left: 8%;
+  top: -10%;
+}
+.pill-green img {
+  width: 50px;
+  height: 50px;
+}
+
+.pill-blur {
+  position: absolute;
+  z-index: -1;
+  left: 5%;
+  top: 35%;
+  width: 0px;
+  height: 0px;
+}
+
+.pill-blue {
+  position: absolute;
+  z-index: -1;
+  left: 80%;
+  top: 40%;
+}
+.pill-blue img {
+  width: 80px;
+  height: 80px;
+}
+
+.pill-gray {
+  position: absolute;
+  z-index: -1;
+  left: 90%;
+  top: -10%;
+}
+.pill-gray img {
+  width: 85px;
+  height: 85px;
+}
+
 @media screen and (max-width: 600px) {
   footer h2 {
     font-size: 28px;
@@ -270,6 +318,26 @@ footer form button:hover {
   form button {
     width: 50%;
     margin-top: 8px;
+  }
+  .pill-pink img {
+    width: 40px;
+    height: 40px;
+  }
+  .pill-green img {
+    width: 30px;
+    height: 30px;
+  }
+  .pill-blur img {
+    width: 10px;
+    height: 10px;
+  }
+  .pill-blue img {
+    width: 40px;
+    height: 40px;
+  }
+  .pill-gray img {
+    width: 30px;
+    height: 30px;
   }
 }
 @media screen and (min-width: 600px) {
