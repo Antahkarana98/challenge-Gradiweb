@@ -1,7 +1,10 @@
 .wrapper{
+  //Estilos contenedor del carusel
   width: 100%;
   position: relative;
+
   .carousel{
+    //Estilos del carusel
     display: grid;
     grid-auto-flow: column;
     gap: 16px;
@@ -9,13 +12,14 @@
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     scrollbar-width: 0;
+
     &::-webkit-scrollbar{
       display: none;
     }
 
     .card{
+      //Estilos de las tarjetas
       scroll-snap-align: start;
-      cursor: pointer;
       max-height: 398px;
 
       .card-img{
@@ -23,6 +27,7 @@
         display: flex;
         justify-content: center;
         align-items: end;
+
         .card-img{
           object-fit: cover;
         }
@@ -36,34 +41,36 @@
           padding: 10px 0;
           border-radius: 20px;
           text-decoration: none;
-          color: #EFA693;
+          color: $color-pink-dark;
           font-size: 14px;
           font-family: 'neogrotesk', sans-serif;
           text-transform: uppercase;
           text-align: center;
           width: 90%;
           transition: all 0.3s ease-in-out;
+
           &:hover{
-            background-color: #fcfcfc;
-            color: #e88d76;
-            border: 1px solid #e88d76;
+            color: $color-pink-hover;
+            border: 1px solid $color-pink-hover;
           }
         }
       }
 
       .card-body{
         margin-top: 18px;
+
         .card-title{
           font-family: 'filson-pro-medium', sans-serif;
           font-size: 18px;
-          color: #444950;
+          color: $color-gray;
         }
+
         .card-info{
 
           span{
             font-family: 'filson-pro-book', sans-serif;
             font-size: 14px;
-            color: #939393;
+            color: $color-gray-light;
             margin-left: 5px;
           }
 
@@ -77,21 +84,21 @@
           }
 
           .star-gray{
-            color: #939393;
+            color: $color-gray-light;
 
           }
 
           .price{
             font-family: 'filson-pro-medium', sans-serif;
             font-size: 15px;
-            color: #444950;
+            color: $color-gray;
             margin-top: 10px;
             display: flex;
 
             .sales{
               font-family: 'filson-pro-book', sans-serif;
               font-size: 15px;
-              color: #939393;
+              color: $color-gray-light;
               text-decoration: line-through;
               margin-right: 10px;
             }
@@ -102,11 +109,14 @@
   }
 }
 
+
+// para suavisar el scroll de las cards
 .carousel.dragging{
   scroll-behavior: auto;
   scroll-snap-type: none;
 }
 
+// para que el cursor se vea como una mano y no se selccione el texto al arrastrar
 .carousel.dragging .card{
   cursor: grab;
   user-select: none;
