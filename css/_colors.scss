@@ -1,8 +1,9 @@
-.color-pink{
-  background-color: #FFDCD3;
-}
+//todas la variables de los colores para que sea mas sencillo cambiar todo el sitio cuando se quieran
+//cambiar los colores
 
-.color-title-gray{
-  color: #444950;
-
-}
+$color-gray: #444950;
+$color-gray-light: #939393;
+$color-pink-dark:#EFA693;
+$color-pink-hover: #e88d76;
+$color-pink: #FFDCD3;
+$color-blue: #CAF0FF;

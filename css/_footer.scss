@@ -1,5 +1,5 @@
 footer{
-  margin-top: 250px;
+  margin-top: 300px;
   position: relative;
   h2{
     text-align: center;
@@ -8,12 +8,13 @@ footer{
     line-height: 61.6px;
     font-weight: 700;
     margin-bottom: 35px;
+    color: $color-gray;
   }
 
   p{
     text-align: center;
     font-size: 15px;
-    color: #939393;
+    color: $color-gray-light;
     font-family: 'filson-pro-book' ,serif;
   }
 
@@ -34,9 +35,10 @@ footer{
       font-family: 'filson-pro-medium', serif;
       line-height: 27px;
       font-size: 15px;
-      border: 1px solid #EFA693;
+      border: 1px solid $color-pink-dark;
+
       &:focus{
-        border: 1px solid #e88d76;
+        border: 1px solid $color-pink-hover;
       }
     }
 
@@ -44,7 +46,7 @@ footer{
       border-radius: 100px;
       border: 0;
       padding: 12px 40px;
-      background-color: #EFA693;
+      background-color: $color-pink-dark;
       opacity: .9;
       color: #FFF;
       font-family: 'neogrotesk', sans-serif;
@@ -52,20 +54,22 @@ footer{
       font-size: 14px;
       cursor: pointer;
       transition: all 0.2s ease-in-out;
+
       &:hover{
-        background-color: #e88d76;
+        background-color: $color-pink-hover;
       }
     }
   }
 }
 
+
+//Estilos ola del final
 .bg-wave{
   width: 100%;
   height: 101%;
   bottom: 0;
-  background: #D1F1FF;
+  background: $color-blue;
   position: absolute;
-  bottom: 0;
   z-index: -1;
 }
 
@@ -81,6 +85,9 @@ footer{
   background-repeat: no-repeat;
   z-index: -1;
 }
+
+
+//Estilos imagenes de las pastillas
 
 .pill-pink{
   position: absolute;

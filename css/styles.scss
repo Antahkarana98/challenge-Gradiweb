@@ -4,11 +4,9 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  //overflow-x: hidden;
-}
-
-p{
-  margin: 0;
+  p{
+    margin: 0;
+  }
 }
 
 
@@ -18,4 +16,3 @@ p{
 @import 'main';
 @import 'footer';
 @import 'carusel';
-@import 'media';

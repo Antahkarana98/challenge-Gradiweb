@@ -4,26 +4,13 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-
-p {
+body p {
   margin: 0;
-}
-
-.color-pink {
-  background-color: #FFDCD3;
-}
-
-.color-title-gray {
-  color: #444950;
 }
 
 @font-face {
   font-family: "filson-pro";
   src: url(.//filson-pro/FilsonProRegular.otf);
-}
-@font-face {
-  font-family: "neogrotesk";
-  src: url(./Neogrotesk/Fontspring-DEMO-neogroteskess-regular.otf);
 }
 @font-face {
   font-family: "filson-pro-book";
@@ -33,7 +20,12 @@ p {
   font-family: "filson-pro-medium";
   src: url(./filson-pro/FilsonProMedium.otf);
 }
+@font-face {
+  font-family: "neogrotesk";
+  src: url(./Neogrotesk/Fontspring-DEMO-neogroteskess-regular.otf);
+}
 .top-bar {
+  background: #FFDCD3;
   height: 32px;
   font-size: 16px;
   line-height: 18.2px;
@@ -44,6 +36,9 @@ p {
   font-family: "Abhaya Libre", serif;
   font-weight: 700;
   margin-bottom: 31px;
+}
+.top-bar p {
+  color: #444950;
 }
 
 header {
@@ -56,6 +51,7 @@ header h1 {
   font-size: 44px;
   font-family: "Abhaya Libre", serif;
   line-height: 140%;
+  color: #444950;
 }
 header .relative {
   position: relative;
@@ -155,7 +151,7 @@ main > div {
 #list-products {
   display: flex;
   gap: 20px;
-  margin-bottom: 150px;
+  margin-bottom: 200px;
 }
 
 @media screen and (max-width: 600px) {
@@ -171,8 +167,13 @@ main > div {
     height: 247px;
   }
 }
+@media screen and (max-width: 900px) {
+  #list-products {
+    margin-bottom: 150px;
+  }
+}
 footer {
-  margin-top: 250px;
+  margin-top: 300px;
   position: relative;
 }
 footer h2 {
@@ -182,6 +183,7 @@ footer h2 {
   line-height: 61.6px;
   font-weight: 700;
   margin-bottom: 35px;
+  color: #444950;
 }
 footer p {
   text-align: center;
@@ -232,9 +234,8 @@ footer form button:hover {
   width: 100%;
   height: 101%;
   bottom: 0;
-  background: #D1F1FF;
+  background: #CAF0FF;
   position: absolute;
-  bottom: 0;
   z-index: -1;
 }
 
@@ -380,7 +381,6 @@ footer form button:hover {
 }
 .wrapper .carousel .card {
   scroll-snap-align: start;
-  cursor: pointer;
   max-height: 398px;
 }
 .wrapper .carousel .card .card-img {
@@ -411,7 +411,6 @@ footer form button:hover {
   transition: all 0.3s ease-in-out;
 }
 .wrapper .carousel .card .card-img .button-card:hover {
-  background-color: #fcfcfc;
   color: #e88d76;
   border: 1px solid #e88d76;
 }
