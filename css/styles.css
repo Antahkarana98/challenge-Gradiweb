@@ -302,8 +302,8 @@ footer form button:hover {
 .pill-gray {
   position: absolute;
   z-index: -1;
-  left: 90%;
-  top: -10%;
+  left: 95%;
+  top: -5%;
 }
 .pill-gray img {
   width: 85px;
@@ -353,6 +353,9 @@ footer form button:hover {
   .pill-blue img {
     width: 55px;
     height: 55px;
+  }
+  .pill-gray {
+    left: 80%;
   }
   .pill-gray img {
     width: 55px;

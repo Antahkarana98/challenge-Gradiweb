@@ -137,8 +137,8 @@ footer{
 .pill-gray{
   position: absolute;
   z-index: -1;
-  left: 90%;
-  top: -10%;
+  left: 95%;
+  top: -5%;
   img{
     width: 85px;
     height: 85px;
@@ -164,6 +164,7 @@ footer{
       margin-top: 8px;
     }
   }
+
 
   .wave{
 
@@ -210,6 +211,7 @@ footer{
   }
 
   .pill-gray{
+    left: 80%;
     img{
       width: 55px;
       height: 55px;
