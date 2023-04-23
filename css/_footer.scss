@@ -202,7 +202,10 @@ footer{
   .wave{
     width: 1920px;
     object-fit: cover;
-    overflow-x: hidden;
+    overflow: hidden;
+    ::-webkit-progress-bar{
+      display: none;
+    }
   }
 }
 
