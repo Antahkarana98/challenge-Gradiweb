@@ -16,6 +16,7 @@
     .card{
       scroll-snap-align: start;
       cursor: pointer;
+      max-height: 398px;
 
       .card-img{
         position: relative;

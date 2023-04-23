@@ -1,67 +1,68 @@
 footer{
   margin-top: 250px;
-}
-
-footer h2{
-  text-align: center;
-  font-family: 'Abhaya Libre', serif;
-  font-size: 44px;
-  line-height: 61.6px;
-  font-weight: 700;
-  margin-bottom: 35px;
-}
-
-footer p{
-  text-align: center;
-  font-size: 15px;
-  color: #939393;
-  font-family: 'filson-pro-book' ,serif;
-}
-
-footer form{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3px;
-  padding-top: 30px;
-  padding-bottom: 73px;
-}
-
-footer form input{
-  border-radius: 100px;
-  border: 0;
-  outline: 0;
-  padding: 11px 24px;
-  background-color: #FFF;
-  font-family: 'filson-pro-medium', serif;
-  line-height: 27px;
-  font-size: 15px;
-  border: 1px solid #EFA693;
-  &:focus{
-    border: 1px solid #e88d76;
+  position: relative;
+  h2{
+    text-align: center;
+    font-family: 'Abhaya Libre', serif;
+    font-size: 44px;
+    line-height: 61.6px;
+    font-weight: 700;
+    margin-bottom: 35px;
   }
-}
 
-footer form button{
-  border-radius: 100px;
-  border: 0;
-  padding: 12px 40px;
-  background-color: #EFA693;
-  opacity: .9;
-  color: #FFF;
-  font-family: 'neogrotesk', sans-serif;
-  line-height: 23.8px;
-  font-size: 14px;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  &:hover{
-    background-color: #e88d76;
+  p{
+    text-align: center;
+    font-size: 15px;
+    color: #939393;
+    font-family: 'filson-pro-book' ,serif;
+  }
+
+  form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    padding-top: 30px;
+    padding-bottom: 73px;
+
+    input{
+      border-radius: 100px;
+      border: 0;
+      outline: 0;
+      padding: 11px 24px;
+      background-color: #FFF;
+      font-family: 'filson-pro-medium', serif;
+      line-height: 27px;
+      font-size: 15px;
+      border: 1px solid #EFA693;
+      &:focus{
+        border: 1px solid #e88d76;
+      }
+    }
+
+    button{
+      border-radius: 100px;
+      border: 0;
+      padding: 12px 40px;
+      background-color: #EFA693;
+      opacity: .9;
+      color: #FFF;
+      font-family: 'neogrotesk', sans-serif;
+      line-height: 23.8px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      &:hover{
+        background-color: #e88d76;
+      }
+    }
   }
 }
 
 .bg-wave{
   width: 100%;
-  height: 500px;
+  height: 101%;
+  bottom: 0;
   background: #D1F1FF;
   position: absolute;
   bottom: 0;
@@ -70,15 +71,70 @@ footer form button{
 
 .wave{
   width: 100%;
-  height: 100%;
+  height: 101%;
   position: absolute;
-  bottom: 500px;
+  bottom: 100%;
   left: 0;
   vertical-align: top;
   background: url(../images/wave.svg);
   background-position: bottom;
   background-repeat: no-repeat;
   z-index: -1;
+}
+
+.pill-pink{
+  position: absolute;
+  z-index: -1;
+  left: 20%;
+  top: -4%;
+  img{
+    width: 53px;
+    height: 50px;
+  }
+}
+
+.pill-green{
+  position: absolute;
+  z-index: -1;
+  left: 8%;
+  top: -10%;
+  img{
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.pill-blur{
+  position: absolute;
+  z-index: -1;
+  left: 5%;
+  top: 35%;
+
+    width: 0px;
+    height: 0px;
+
+}
+
+.pill-blue{
+  position: absolute;
+  z-index: -1;
+  left: 80%;
+  top: 40%;
+  img{
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.pill-gray{
+  position: absolute;
+  z-index: -1;
+  left: 90%;
+  top: -10%;
+  img{
+    width: 85px;
+    height: 85px;
+  }
 }
 
 
@@ -101,12 +157,68 @@ footer form button{
     }
   }
 
+  .pill-pink{
+    img{
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .pill-green{
+    img{
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .pill-blur{
+    img{
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  .pill-blue{
+    img{
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .pill-gray{
+    img{
+      width: 30px;
+      height: 30px;
+    }
+  }
 }
 
 @media screen and (min-width: 600px) {
+
   form{
     input{
       width: 300px;
     }
   }
+}
+
+
+@media (min-width: 400px) and (max-width: 900px) {
+  footer{
+    margin-top: 150px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  footer{
+    margin-top: 100px;
+    h2{
+      margin: 0 5px;
+      margin-bottom: 50px;
+    }
+    p{
+      margin: 0 20px;
+    }
+  }
+
 }
