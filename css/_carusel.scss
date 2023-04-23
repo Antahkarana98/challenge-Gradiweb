@@ -4,13 +4,11 @@
   .carousel{
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 3) - 12px);
     gap: 16px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     scrollbar-width: 0;
-
     &::-webkit-scrollbar{
       display: none;
     }
@@ -18,7 +16,7 @@
     .card{
       scroll-snap-align: start;
       cursor: pointer;
-      width: 320px;
+
       .card-img{
         position: relative;
         display: flex;
@@ -38,6 +36,7 @@
           border-radius: 20px;
           text-decoration: none;
           color: #EFA693;
+          font-size: 14px;
           font-family: 'neogrotesk', sans-serif;
           text-transform: uppercase;
           text-align: center;
@@ -59,9 +58,7 @@
           color: #444950;
         }
         .card-info{
-          display: flex;
-          justify-content: space-between;
-          align-items: end;
+
           span{
             font-family: 'filson-pro-book', sans-serif;
             font-size: 14px;
@@ -71,6 +68,7 @@
 
           .rating{
             display: flex;
+            margin-top: 6px;
           }
 
           .star-yellow{
@@ -113,18 +111,10 @@
   user-select: none;
 }
 
-@media  screen and (max-width: 900px){
-  .wrapper{
-    .carousel{
-      grid-auto-columns: calc((100% / 2) - 9px);
-    }
-  }
-}
-
-@media  screen and (max-width: 600px){
-  .wrapper{
-    .carousel{
-      grid-auto-columns: 100%;
-    }
+@media screen and (min-width: 600px) {
+  .card-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
   }
 }

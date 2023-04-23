@@ -32,7 +32,6 @@ footer form input{
   border: 0;
   outline: 0;
   padding: 11px 24px;
-  width: 300px;
   background-color: #FFF;
   font-family: 'filson-pro-medium', serif;
   line-height: 27px;
@@ -80,4 +79,34 @@ footer form button{
   background-position: bottom;
   background-repeat: no-repeat;
   z-index: -1;
+}
+
+
+@media screen and (max-width: 600px) {
+
+  footer h2{
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  form{
+    flex-direction: column;
+
+    input{
+      width: 80%;
+    }
+    button{
+      width: 50%;
+      margin-top: 8px;
+    }
+  }
+
+}
+
+@media screen and (min-width: 600px) {
+  form{
+    input{
+      width: 300px;
+    }
+  }
 }
