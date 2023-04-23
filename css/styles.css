@@ -340,6 +340,11 @@ footer form button:hover {
     width: 30px;
     height: 30px;
   }
+  .wave {
+    width: 1920px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 @media screen and (min-width: 600px) {
   form input {
