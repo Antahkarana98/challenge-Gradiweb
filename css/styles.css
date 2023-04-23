@@ -36,6 +36,7 @@ p {
 .top-bar {
   height: 32px;
   font-size: 16px;
+  line-height: 18.2px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -106,6 +107,30 @@ header .relative {
   gap: 40px;
 }
 
+@media screen and (max-width: 600px) {
+  .top-bar {
+    font-size: 12px;
+    line-height: 16.8px;
+    font-family: "neogrotesk", sans-serif;
+  }
+  header {
+    flex-direction: column;
+    margin: 0px 40px;
+  }
+  header h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  header .box-blue {
+    position: absolute;
+    top: 18px;
+    left: -2px;
+  }
+  .butons-carrousel {
+    margin-left: 15px;
+    margin-bottom: 25px;
+  }
+}
 main section {
   margin-bottom: 50px;
 }
@@ -137,6 +162,19 @@ main > div {
   margin-bottom: 164px;
 }
 
+@media screen and (max-width: 600px) {
+  main section {
+    margin-left: 16px;
+    margin-bottom: 0;
+  }
+  .card {
+    height: 250px;
+  }
+  .card .img-card {
+    width: 247px;
+    height: 247px;
+  }
+}
 footer {
   margin-top: 250px;
 }
@@ -171,7 +209,6 @@ footer form input {
   border: 0;
   outline: 0;
   padding: 11px 24px;
-  width: 300px;
   background-color: #FFF;
   font-family: "filson-pro-medium", serif;
   line-height: 27px;
@@ -221,6 +258,27 @@ footer form button:hover {
   z-index: -1;
 }
 
+@media screen and (max-width: 600px) {
+  footer h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  form {
+    flex-direction: column;
+  }
+  form input {
+    width: 80%;
+  }
+  form button {
+    width: 50%;
+    margin-top: 8px;
+  }
+}
+@media screen and (min-width: 600px) {
+  form input {
+    width: 300px;
+  }
+}
 .wrapper {
   width: 100%;
   position: relative;
@@ -228,7 +286,6 @@ footer form button:hover {
 .wrapper .carousel {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: calc(33.3333333333% - 12px);
   gap: 16px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -241,7 +298,6 @@ footer form button:hover {
 .wrapper .carousel .card {
   scroll-snap-align: start;
   cursor: pointer;
-  width: 320px;
 }
 .wrapper .carousel .card .card-img {
   position: relative;
@@ -263,6 +319,7 @@ footer form button:hover {
   border-radius: 20px;
   text-decoration: none;
   color: #EFA693;
+  font-size: 14px;
   font-family: "neogrotesk", sans-serif;
   text-transform: uppercase;
   text-align: center;
@@ -282,11 +339,6 @@ footer form button:hover {
   font-size: 18px;
   color: #444950;
 }
-.wrapper .carousel .card .card-body .card-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-}
 .wrapper .carousel .card .card-body .card-info span {
   font-family: "filson-pro-book", sans-serif;
   font-size: 14px;
@@ -295,6 +347,7 @@ footer form button:hover {
 }
 .wrapper .carousel .card .card-body .card-info .rating {
   display: flex;
+  margin-top: 6px;
 }
 .wrapper .carousel .card .card-body .card-info .star-yellow {
   color: #FDC830;
@@ -329,13 +382,10 @@ footer form button:hover {
           user-select: none;
 }
 
-@media screen and (max-width: 900px) {
-  .wrapper .carousel {
-    grid-auto-columns: calc(50% - 9px);
-  }
-}
-@media screen and (max-width: 600px) {
-  .wrapper .carousel {
-    grid-auto-columns: 100%;
+@media screen and (min-width: 600px) {
+  .card-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -1,6 +1,7 @@
 .top-bar{
   height: 32px;
   font-size: 16px;
+  line-height: 18.2px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,4 +72,29 @@ header{
 .butons-carrousel{
   display: flex;
   gap: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .top-bar{
+    font-size: 12px;
+    line-height: 16.8px;
+    font-family: 'neogrotesk', sans-serif;
+  }
+  header{
+    flex-direction: column;
+    margin: 0px 40px;
+    h1{
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+    .box-blue{
+      position: absolute;
+      top: 18px;
+      left: -2px;
+    }
+  }
+  .butons-carrousel{
+    margin-left: 15px;
+    margin-bottom: 25px;
+  }
 }
