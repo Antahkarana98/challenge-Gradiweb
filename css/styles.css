@@ -8,6 +8,10 @@ body p {
   margin: 0;
 }
 
+color {
+  color: #9fe4ff;
+}
+
 @font-face {
   font-family: "filson-pro";
   src: url(.//filson-pro/FilsonProRegular.otf);
@@ -184,6 +188,7 @@ footer h2 {
   font-weight: 700;
   margin-bottom: 35px;
   color: #444950;
+  padding-top: 50px;
 }
 footer p {
   text-align: center;
@@ -320,6 +325,57 @@ footer form button:hover {
     width: 50%;
     margin-top: 8px;
   }
+  .wave {
+    height: 30%;
+    background-size: cover;
+    background-position: left;
+  }
+}
+@media (min-width: 400px) and (max-width: 900px) {
+  footer {
+    margin-top: 200px;
+  }
+  .pill-pink img {
+    width: 45px;
+    height: 45px;
+  }
+  .pill-green {
+    top: -5%;
+  }
+  .pill-green img {
+    width: 35px;
+    height: 35px;
+  }
+  .pill-blur img {
+    width: 10px;
+    height: 10px;
+  }
+  .pill-blue img {
+    width: 55px;
+    height: 55px;
+  }
+  .pill-gray img {
+    width: 55px;
+    height: 55px;
+  }
+  .wave {
+    height: 50%;
+  }
+}
+@media screen and (max-width: 400px) {
+  footer {
+    margin-top: 150px;
+  }
+  footer h2 {
+    margin: 0 5px;
+    margin-bottom: 50px;
+  }
+  footer p {
+    margin: 0 20px;
+  }
+  .pill-pink {
+    left: 30%;
+  }
   .pill-pink img {
     width: 40px;
     height: 40px;
@@ -332,44 +388,34 @@ footer form button:hover {
     width: 10px;
     height: 10px;
   }
+  .pill-blue {
+    top: 50%;
+    left: 85%;
+  }
   .pill-blue img {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
+  }
+  .pill-gray {
+    top: 25%;
+    left: 85%;
   }
   .pill-gray img {
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
+  }
+}
+@media (min-width: 900px) and (max-width: 1440px) {
+  footer {
+    margin-top: 200px;
+  }
+}
+@media screen and (min-width: 2300px) {
+  footer {
+    margin-top: 400px;
   }
   .wave {
-    width: 1920px;
-    -o-object-fit: cover;
-       object-fit: cover;
-    overflow: hidden;
-  }
-  .wave ::-webkit-progress-bar {
-    display: none;
-  }
-}
-@media screen and (min-width: 600px) {
-  form input {
-    width: 300px;
-  }
-}
-@media (min-width: 400px) and (max-width: 900px) {
-  footer {
-    margin-top: 150px;
-  }
-}
-@media screen and (max-width: 400px) {
-  footer {
-    margin-top: 100px;
-  }
-  footer h2 {
-    margin: 0 5px;
-    margin-bottom: 50px;
-  }
-  footer p {
-    margin: 0 20px;
+    background-size: cover;
   }
 }
 .wrapper {

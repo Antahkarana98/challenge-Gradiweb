@@ -9,6 +9,7 @@ footer{
     font-weight: 700;
     margin-bottom: 35px;
     color: $color-gray;
+    padding-top: 50px;
   }
 
   p{
@@ -117,8 +118,8 @@ footer{
   left: 5%;
   top: 35%;
 
-    width: 0px;
-    height: 0px;
+  width: 0px;
+  height: 0px;
 
 }
 
@@ -146,10 +147,10 @@ footer{
 
 
 @media screen and (max-width: 600px) {
-
   footer h2{
     font-size: 28px;
     line-height: 36px;
+
   }
 
   form{
@@ -164,7 +165,76 @@ footer{
     }
   }
 
+  .wave{
+
+    height: 30%;
+    background-size: cover;
+    background-position: left;
+  }
+
+}
+
+@media (min-width: 400px) and (max-width: 900px) {
+  footer{
+    margin-top: 200px;
+  }
+
   .pill-pink{
+    img{
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  .pill-green{
+    top: -5%;
+    img{
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  .pill-blur{
+    img{
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  .pill-blue{
+
+    img{
+      width: 55px;
+      height: 55px;
+    }
+  }
+
+  .pill-gray{
+    img{
+      width: 55px;
+      height: 55px;
+    }
+  }
+
+  .wave{
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  footer{
+    margin-top: 150px;
+    h2{
+      margin: 0 5px;
+      margin-bottom: 50px;
+    }
+    p{
+      margin: 0 20px;
+    }
+  }
+
+  .pill-pink{
+    left: 30%;
     img{
       width: 40px;
       height: 40px;
@@ -186,55 +256,37 @@ footer{
   }
 
   .pill-blue{
+    top: 50%;
+    left: 85%;
     img{
-      width: 40px;
-      height: 40px;
+      width: 45px;
+      height: 45px;
     }
   }
 
   .pill-gray{
+    top: 25%;
+    left: 85%;
     img{
-      width: 30px;
-      height: 30px;
+      width: 45px;
+      height: 45px;
     }
   }
 
+}
+
+@media (min-width: 900px) and (max-width: 1440px) {
+  footer{
+    margin-top: 200px;
+  }
+
+}
+
+@media screen and (min-width: 2300px) {
+  footer{
+    margin-top: 400px;
+  }
   .wave{
-    width: 1920px;
-    object-fit: cover;
-    overflow: hidden;
-    ::-webkit-progress-bar{
-      display: none;
-    }
+    background-size: cover;
   }
-}
-
-@media screen and (min-width: 600px) {
-
-  form{
-    input{
-      width: 300px;
-    }
-  }
-}
-
-
-@media (min-width: 400px) and (max-width: 900px) {
-  footer{
-    margin-top: 150px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  footer{
-    margin-top: 100px;
-    h2{
-      margin: 0 5px;
-      margin-bottom: 50px;
-    }
-    p{
-      margin: 0 20px;
-    }
-  }
-
 }
