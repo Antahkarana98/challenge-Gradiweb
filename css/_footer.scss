@@ -198,6 +198,11 @@ footer{
       height: 30px;
     }
   }
+
+  .wave{
+    width: 1920px;
+    object-fit: cover;
+  }
 }
 
 @media screen and (min-width: 600px) {
