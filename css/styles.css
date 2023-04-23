@@ -344,6 +344,7 @@ footer form button:hover {
     width: 1920px;
     -o-object-fit: cover;
        object-fit: cover;
+    overflow-x: hidden;
   }
 }
 @media screen and (min-width: 600px) {
