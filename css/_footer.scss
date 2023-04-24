@@ -10,6 +10,7 @@ footer{
     margin-bottom: 35px;
     color: $color-gray;
     padding-top: 50px;
+
   }
 
   p{
@@ -19,13 +20,14 @@ footer{
     font-family: 'filson-pro-book' ,serif;
   }
 
-  form{
+  form .flex-form{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3px;
     padding-top: 30px;
-    padding-bottom: 73px;
+    padding-bottom: 30px;
+
 
     input{
       border-radius: 100px;
@@ -62,6 +64,38 @@ footer{
     }
   }
 }
+
+.alert{
+  display: flex;
+  justify-content: center;
+  .error{
+    background: #FF6961;
+    color: #FFF;
+    padding: 20px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'neogrotesk', serif;
+    text-transform: uppercase;
+    text-align: center;
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  .success{
+    background: #77DD77;
+    color: #FFF;
+    padding: 20px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'neogrotesk', serif;
+    text-transform: uppercase;
+    text-align: center;
+    width: 300px;
+    margin-bottom: 20px;
+  }
+}
+
 
 
 //Estilos ola del final
@@ -165,7 +199,7 @@ footer{
 
   }
 
-  form{
+  form .flex-form{
     flex-direction: column;
 
     input{
