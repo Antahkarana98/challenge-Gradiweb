@@ -188,7 +188,7 @@ footer h2 {
   font-weight: 700;
   margin-bottom: 35px;
   color: #444950;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 footer p {
   text-align: center;
@@ -250,7 +250,7 @@ footer form .flex-form button:hover {
   text-transform: uppercase;
   text-align: center;
   width: 300px;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 .alert .success {
   background: #77DD77;
@@ -263,7 +263,7 @@ footer form .flex-form button:hover {
   text-transform: uppercase;
   text-align: center;
   width: 300px;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .bg-wave {

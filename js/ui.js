@@ -85,7 +85,7 @@ export function MessageSubmit(message, type){
   type === 'error' ? p.classList.add('error') : p.classList.add('success');
 
   div.appendChild(p);
-  form.appendChild(div);
+  form.insertAdjacentElement('beforebegin', div);
 
   setTimeout(() => {
     div.remove();
