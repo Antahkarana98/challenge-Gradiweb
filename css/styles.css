@@ -282,10 +282,14 @@ footer form button:hover {
 .pill-blur {
   position: absolute;
   z-index: -1;
-  left: 5%;
-  top: 35%;
-  width: 0px;
-  height: 0px;
+  top: 40%;
+  left: 7%;
+}
+.pill-blur img {
+  filter: blur(4px);
+  rotate: 45deg;
+  width: 100px;
+  height: 100px;
 }
 
 .pill-blue {
@@ -302,7 +306,7 @@ footer form button:hover {
 .pill-gray {
   position: absolute;
   z-index: -1;
-  left: 95%;
+  left: 90%;
   top: -5%;
 }
 .pill-gray img {
@@ -310,6 +314,11 @@ footer form button:hover {
   height: 85px;
 }
 
+@media screen and (min-width: 600px) {
+  form input {
+    width: 300px;
+  }
+}
 @media screen and (max-width: 600px) {
   footer h2 {
     font-size: 28px;
@@ -333,7 +342,7 @@ footer form button:hover {
 }
 @media (min-width: 400px) and (max-width: 900px) {
   footer {
-    margin-top: 150px;
+    margin-top: 200px;
   }
   .pill-pink img {
     width: 45px;
@@ -346,9 +355,12 @@ footer form button:hover {
     width: 35px;
     height: 35px;
   }
+  .pill-blur {
+    top: 20%;
+  }
   .pill-blur img {
-    width: 10px;
-    height: 10px;
+    width: 70px;
+    height: 70px;
   }
   .pill-blue img {
     width: 55px;
@@ -387,9 +399,12 @@ footer form button:hover {
     width: 30px;
     height: 30px;
   }
+  .pill-blur {
+    top: 20%;
+  }
   .pill-blur img {
-    width: 10px;
-    height: 10px;
+    width: 60px;
+    height: 60px;
   }
   .pill-blue {
     top: 50%;
