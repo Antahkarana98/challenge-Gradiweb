@@ -61,3 +61,33 @@ export function showStars(rating){
     }
     return stars;
 }
+
+
+export function MessageSubmit(message, type){
+
+  const form = document.querySelector('form');
+  const alert = document.querySelector('.alert');
+
+  //Evita que se creen multiples alertas
+  if(alert){
+    alert.remove();
+  }
+
+  const div = document.createElement('div');
+
+  div.classList.add('alert');
+
+  const p = document.createElement('p');
+
+  p.textContent = message;
+
+  //valida el tipo de mensaje
+  type === 'error' ? p.classList.add('error') : p.classList.add('success');
+
+  div.appendChild(p);
+  form.appendChild(div);
+
+  setTimeout(() => {
+    div.remove();
+  }, 3000);
+}

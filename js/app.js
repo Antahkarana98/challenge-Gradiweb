@@ -1,5 +1,5 @@
 import { apiQuery } from './api.js';
-import { showStars } from './stars.js';
+import { showStars, MessageSubmit } from './ui.js';
 import { ratingCalc, formattTags } from './functions.js';
 import { carousel } from './carousel.js';
 
@@ -7,6 +7,8 @@ import { carousel } from './carousel.js';
 
   //Ejecuta la funcion showProducts cuando el DOM este cargado
   document.addEventListener('DOMContentLoaded', showProducts);
+  document.addEventListener('submit', submitForm);
+
 
   async function showProducts(){
     //Obtiene los productos de la API, pero no los guarda hasta que la funcion apiQuery se ejecute
@@ -79,6 +81,25 @@ import { carousel } from './carousel.js';
     //Esta funcion se ejecuta aca debido a que necesita que cada card exista en el DOM y es la que le da
     //funcionalidad al carousel
     carousel();
+  }
+
+  //Valida el formulario
+  function submitForm(e){
+    e.preventDefault();
+
+    //regex para validar el email
+    const regexEmail = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
+
+    const inputEmail = document.querySelector('#email');
+
+    //Valida que el input no este vacio y si el email es valido
+    if(!regexEmail.test(inputEmail.value)){
+      MessageSubmit('Please enter a valid email', 'error');
+      return;
+    }
+
+    MessageSubmit('Thanks for your suscription', 'success');
+    inputEmail.value = '';
   }
 
 })();

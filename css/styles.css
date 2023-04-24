@@ -196,15 +196,15 @@ footer p {
   color: #939393;
   font-family: "filson-pro-book", serif;
 }
-footer form {
+footer form .flex-form {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 3px;
   padding-top: 30px;
-  padding-bottom: 73px;
+  padding-bottom: 30px;
 }
-footer form input {
+footer form .flex-form input {
   border-radius: 100px;
   border: 0;
   outline: 0;
@@ -215,10 +215,10 @@ footer form input {
   font-size: 15px;
   border: 1px solid #EFA693;
 }
-footer form input:focus {
+footer form .flex-form input:focus {
   border: 1px solid #e88d76;
 }
-footer form button {
+footer form .flex-form button {
   border-radius: 100px;
   border: 0;
   padding: 12px 40px;
@@ -231,8 +231,39 @@ footer form button {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
-footer form button:hover {
+footer form .flex-form button:hover {
   background-color: #e88d76;
+}
+
+.alert {
+  display: flex;
+  justify-content: center;
+}
+.alert .error {
+  background: #FF6961;
+  color: #FFF;
+  padding: 20px 20px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "neogrotesk", serif;
+  text-transform: uppercase;
+  text-align: center;
+  width: 300px;
+  margin-bottom: 20px;
+}
+.alert .success {
+  background: #77DD77;
+  color: #FFF;
+  padding: 20px 20px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "neogrotesk", serif;
+  text-transform: uppercase;
+  text-align: center;
+  width: 300px;
+  margin-bottom: 20px;
 }
 
 .bg-wave {
@@ -324,13 +355,13 @@ footer form button:hover {
     font-size: 28px;
     line-height: 36px;
   }
-  form {
+  form .flex-form {
     flex-direction: column;
   }
-  form input {
+  form .flex-form input {
     width: 80%;
   }
-  form button {
+  form .flex-form button {
     width: 50%;
     margin-top: 8px;
   }
